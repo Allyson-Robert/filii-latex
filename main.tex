@@ -1,0 +1,141 @@
+\documentclass{article}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage[dutch]{babel}
+\usepackage{float}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{csquotes}
+\usepackage{biblatex}
+\usepackage{amsmath}
+\usepackage{verbatim}
+\usepackage{listings}
+\usepackage{minted}
+\usepackage[colorlinks=true]{hyperref}
+\usepackage{cleveref}
+
+\addbibresource{references.bib}
+
+\title{LaTeX Workshop}
+\author{Allyson Robert}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\section{Introduction}
+\label{sec:intro}
+Hier is een willekeurige inleidingende paragraaf. 
+Als jullie zover geraakt zijn dan kunnen we verder met het volgend onderdeel.
+Het is altijd handig om elke zin op een nieuwe regel te plaatsen, zo zullen in de toekomst errors gemakkelijker getraceerd worden.
+
+\section{De wetten van Newton}
+Voor zij die het niet meer weten, de wetten van Newton kunnen als volgt genoteerd worden:
+
+\begin{align}
+    \sum \vec{F} = 0 &\Rightarrow \vec{v} = \text{cte}\\
+    %
+    \vec{a} &= \frac{\sum \vec{F}}{m} \\
+    %
+    \vec{F}_{A\to B} &= -\vec{F}_{B \to A}
+\end{align}
+
+waarbij $\vec{F}_{A \to B}$ een kracht voorstelt van lichaam $A$ op lichaam $B$.
+Handige tips voor wiskundige uitdrukkingen kun je vinden op de website van Overleaf \cite{OverleafMath}.
+
+\section{Figuren}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{img/pikachu_transparent.png}
+    \caption{Fat Pikachu is best Pikachu}
+    \label{fig:pikachu}
+\end{figure}
+
+\section{Tabellen}
+
+\begin{table}[H]
+\centering
+\caption{Plotting tool dependencies}
+\label{tab:dependencies}
+\begin{tabular}{l|l|l}
+\rowcolor[HTML]{EFEFEF} 
+Data & GUI & Built-in \\ \hline\hline
+Plotly v5.11.0 & PyQt5 v5.15.4 & datetime \\ 
+Numpy v1.24.0 & natsort v8.2.0 & json \\ 
+Pandas v1.5.2 &  & csv \\ 
+ &  & sys \\ 
+ &  & os \\ 
+\end{tabular}
+\end{table}
+Ook voor tabellen en figuren heeft Overleaf nuttige informatie\cite{OverleafFigures}, voor minipages kan je kijken op StackExchange\cite{StackExchangeMinipage}.
+
+\section{Code snippets}
+Hieronder heb ik de package \textit{minted} gebruikt die kleurenschema's bevat voor veel bekende talen zoals Python en C++.
+\begin{minted}{cpp}
+    class Particle {
+    public:
+        // Constructor
+        Particle(double mass, double charge) 
+            : mass(mass), charge(charge) {}
+    
+        // Getters
+        double getMass() const { return mass; }
+        double getCharge() const { return charge; }
+    
+        // Setters
+        void setMass(double m) { mass = m; }
+        void setCharge(double c) { charge = c; }
+    
+    private:
+        double mass;
+        double charge;
+    };
+\end{minted}
+Wil je graag een label en caption gebruiken dan kun je \textit{listings} gebruiken om de minted environment te \textit{wrappen} zoals in \cref{listing:python}.
+Let op listings zijn floating.
+
+\begin{listing}[ht!]
+    \caption{Python example with caption using listings and minted}
+    \label{listing:python}
+    \begin{minted}{python}
+        import webbrowser
+    
+        def open_youtube_video():
+            url = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+            webbrowser.open(url)
+        open_youtube_video()
+    \end{minted}
+\end{listing}
+Dit bekom je dankzij de volgende structuur (hier letterlijk geplaatst dankzij de package \textit{verbatim}):
+\begin{verbatim}
+    \begin{minted}{python}
+        import webbrowser
+    
+        def open_youtube_video():
+            url = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+            webbrowser.open(url)
+        open_youtube_video()
+    \end{minted}
+\end{verbatim}
+
+\section{Referenties}
+Je kan refereren naar labels in je tekst/figure/tabellen etc. door bijvoorbeeld \verb|\ref{fig:pikachu}| te gebruiken.
+Zo verwijst \LaTeX ~automatisch naar het juiste nummer van de figuur: \ref{fig:pikachu}.
+Beter is om de cleveref package en het commando \verb|\cref{tab:dependencies}| te gebruiken zodat LaTeX ook zelf refereert naar het type object.
+Zo weet latex zelf dat ik refereer naar \cref{fig:pikachu} en \cref{tab:dependencies} of zelfs \cref{sec:intro}.
+Dit zal afhangen van de taalinstellingen in je preamble, gebruik hiervoor de juiste instellingen van de \textit{babel} package.
+
+
+Het is ook mogelijk om LaTeX je bibliografie te laten beheren.
+Gebruik daarvoor de \textit{csquotes} en \textit{biblatex}.
+Je dient in de preamble ook te wijzen naar een \textit{references.bib} bestand met \verb|addbibresource| en \verb|\printbibliography| gebruiken waar je de lijst van referenties wilt toevoegen.
+Zo kan ik enkele handige pagina's van Overleaf citeren \cite{Overleaf30min}.
+Het document heb ik aangevuld met meerdere dergelijke referenties.
+
+\printbibliography
+
+
+
+
+\end{document}
