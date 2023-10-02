@@ -4,15 +4,15 @@
 \usepackage{float}
 \usepackage{xcolor}
 \usepackage{graphicx}
-\usepackage{csquotes}
-\usepackage{biblatex}
 \usepackage{amsmath}
 \usepackage{verbatim}
 \usepackage{listings}
-\usepackage{minted}
+\usepackage{csquotes}
+\usepackage{biblatex}
 \usepackage[colorlinks=true]{hyperref}
 \usepackage{cleveref}
 
+\setlength\parindent{0pt}
 \addbibresource{references.bib}
 
 \title{LaTeX Workshop}
@@ -45,7 +45,7 @@ waarbij $\vec{F}_{A \to B}$ een kracht voorstelt van lichaam $A$ op lichaam $B$.
 Handige tips voor wiskundige uitdrukkingen kun je vinden op de website van Overleaf \cite{OverleafMath}.
 
 \section{Figuren}
-\begin{figure}[H]
+    \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{img/pikachu_transparent.png}
     \caption{Fat Pikachu is best Pikachu}
@@ -68,55 +68,53 @@ Pandas v1.5.2 &  & csv \\
  &  & os \\ 
 \end{tabular}
 \end{table}
+
 Ook voor tabellen en figuren heeft Overleaf nuttige informatie\cite{OverleafFigures}, voor minipages kan je kijken op StackExchange\cite{StackExchangeMinipage}.
 
 \section{Code snippets}
-Hieronder heb ik de package \textit{minted} gebruikt die kleurenschema's bevat voor veel bekende talen zoals Python en C++.
-\begin{minted}{cpp}
-    class Particle {
-    public:
-        // Constructor
-        Particle(double mass, double charge) 
-            : mass(mass), charge(charge) {}
-    
-        // Getters
-        double getMass() const { return mass; }
-        double getCharge() const { return charge; }
-    
-        // Setters
-        void setMass(double m) { mass = m; }
-        void setCharge(double c) { charge = c; }
-    
-    private:
-        double mass;
-        double charge;
-    };
-\end{minted}
-Wil je graag een label en caption gebruiken dan kun je \textit{listings} gebruiken om de minted environment te \textit{wrappen} zoals in \cref{listing:python}.
-Let op listings zijn floating.
+Hieronder heb ik de package \textit{listings} gebruikt die keywords bevat voor veel bekende talen zoals Python en C++.
+Let echter op daar listings beschouwd worden als floating.
 
-\begin{listing}[ht!]
-    \caption{Python example with caption using listings and minted}
-    \label{listing:python}
-    \begin{minted}{python}
-        import webbrowser
-    
-        def open_youtube_video():
-            url = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-            webbrowser.open(url)
-        open_youtube_video()
-    \end{minted}
-\end{listing}
+\begin{lstlisting}[language=C++]
+class Particle {
+public:
+    // Constructor
+    Particle(double mass, double charge) 
+        : mass(mass), charge(charge) {}
+
+    // Getters
+    double getMass() const { return mass; }
+    double getCharge() const { return charge; }
+
+    // Setters
+    void setMass(double m) { mass = m; }
+    void setCharge(double c) { charge = c; }
+
+private:
+    double mass;
+    double charge;
+};
+\end{lstlisting}
+\begin{lstlisting}[language=Python,label=listing:python,caption=Python example with caption and label]    
+import webbrowser
+
+def open_youtube_video():
+    url = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    webbrowser.open(url)
+open_youtube_video()
+\end{lstlisting}
+
 Dit bekom je dankzij de volgende structuur (hier letterlijk geplaatst dankzij de package \textit{verbatim}):
 \begin{verbatim}
-    \begin{minted}{python}
-        import webbrowser
+    \begin{lstlisting}[language=Python,label=listing:python,
+    caption=Python example with caption and label]    
+    import webbrowser
     
-        def open_youtube_video():
-            url = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-            webbrowser.open(url)
-        open_youtube_video()
-    \end{minted}
+    def open_youtube_video():
+        url = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        webbrowser.open(url)
+    open_youtube_video()
+\end{lstlisting}
 \end{verbatim}
 
 \section{Referenties}
