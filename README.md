@@ -6,12 +6,8 @@
 Het doel van deze workshop is om studenten kennis te laten maken met LaTeX.
 
 # Inhoud Workshop
-- Vergelijkingen
-- Figuren
-- Tabellen
-- Code snippets
-- Referenties
-- Delen van Projecten
+* TOC
+{:toc}
 
 # Inleiding
 
