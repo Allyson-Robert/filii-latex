@@ -68,8 +68,12 @@ Let wel op dat Overleaf zeer gebruiksvriendelijk wilt zijn en dus een groot aand
 Je kan het aantal errors zien in de editor, hou deze in het oog en verbeter ze zelf vooraleer de problemen te hoog opstapelen en onhandelbaar worden.
 
 # Vergelijkingen
+In LaTeX kun je vergelijkingen op verschillende manieren invoegen, afhankelijk van de complexiteit en de plaatsing in je tekst. 
+Voor meer gedetailleerde uitleg en voorbeelden over het werken met vergelijkingen in LaTeX, kun je de Overleaf-handleiding raadplegen: [Mathematical Expressions](https://www.overleaf.com/learn/latex/Mathematical_expressions).
 
 ## Formules in de tekst
+Voor korte formules in de tekst gebruik je de wiskundemodus door formules tussen `\( ... \)` of `$ ... $` te plaatsen, zoals in `\( x^2 + y^2 = c^2 \)`.
+
 - Gebruik mathmode door gebruik van `\(…\)` of `$…$`.
   - `$x^2 + y^2 = c^2$`
   - `\(x^2 + y^2 = c^2\)`
@@ -77,9 +81,12 @@ Je kan het aantal errors zien in de editor, hou deze in het oog en verbeter ze z
 - Voorbeelden van Griekse letters en andere symbolen:
   - `\kappa`
   - `\hbar`
-- Gebruik Detexify (App) voor het vinden van symbolen.
+- Gebruik de [Detexify (App)](https://detexify.kirelabs.org/classify.html)  voor het vinden van symbolen.
 
 ## Formules in blokken
+Voor grotere of complexere vergelijkingen die je wilt uitlijnen, gebruik je blokomgevingen zoals `align`, beschikbaar via de `amsmath` package. 
+Hiermee kun je meerdere vergelijkingen netjes onder elkaar zetten en uitlijnen, bijvoorbeeld:
+
 ```latex
 \usepackage{amsmath}
 …
@@ -93,8 +100,9 @@ Je kan het aantal errors zien in de editor, hou deze in het oog en verbeter ze z
 ```
 
 # Figuren
+Figueren spelen een cruciale rol in wetenschappelijke documenten, en LaTeX biedt uitgebreide mogelijkheden om afbeeldingen en diagrammen professioneel weer te geven. 
+Of je nu vectorafbeeldingen of bitmaps gebruikt, LaTeX zorgt ervoor dat je figuren er scherp en goed uitgelijnd uitzien. 
 
-In een verslag ga je bijna altijd figuren willen toevoegen. Er bestaan twee soorten figuren:
 - **Vectortekeningen** zijn ideaal omdat deze exact gedefinieerd worden door geometrie:
   - Gebruik illustrator of inkscape
   - Eerst exporteren naar PDF.
@@ -103,8 +111,10 @@ In een verslag ga je bijna altijd figuren willen toevoegen. Er bestaan twee soor
   - JPEG (Standaard lossy compression)
 Indien je kan werken met vectortekeningen is dit de beste keuze. Zo zien jouw figuren er altijd proper uit.
 
-## Figure Environment
+Met behulp van de `graphicx` package kun je eenvoudig afbeeldingen invoegen en aanpassen, terwijl meer geavanceerde gebruikers met TikZ zelfs volledig geïntegreerde diagrammen kunnen tekenen. 
+In dit gedeelte leer je hoe je figuren correct in je document kunt plaatsen, hoe je meerdere figuren naast elkaar kunt weergeven, en hoe je onderschriften en labels toevoegt voor referenties.
 
+## Figure Environment
 Wil je een figuur toevoegen aan jouw document dan kan dit met de `figure` environment die met de `graphicx` package beschikbaar is.
 ```latex
 \usepackage{graphicx}
@@ -145,7 +155,6 @@ Om gebruik te maken van deze functionaliteit, moet je het TikZ package inladen i
 Een belangrijk aandachtspunt bij het gebruik van TikZ is dat het snel zwaar kan worden om te compileren, vooral bij complexe tekeningen. Dit kan leiden tot langere wachttijden bij het genereren van je document. Mocht je echter hulp nodig hebben bij het genereren van TikZ-code, kan ChatGPT je ook hierbij ondersteunen. ChatGPT kan codevoorbeelden geven en je begeleiden bij het maken van complexe diagrammen en tekeningen in TikZ.
 
 # Tabellen
-
 Naast figuren zal je ook regelmatig nood hebben aan tabellen, deze kunnen heel omslachtig zijn om te maken.
 Je hebt er de `tabular` en `tables` environments voor nodig.
 De eerste helpt je met de inhoud van de tabel, terwijl de tweede je helpt om dit te verwerken in je tekst.
@@ -279,29 +288,15 @@ Hier zijn nog enkele tips die je kan gebruiken in je LaTeX carriere.
 - Bij problemen: allyson.Robert@uhasselt.be.
 
 ## Handige links
-1. Overleaf: [https://www.overleaf.com](https://www.overleaf.com)  
-   Online LaTeX-editor
-
-2. Learn Overleaf: [https://www.overleaf.com/learn](https://www.overleaf.com/learn)  
-   Algemene LaTeX-resource
-
-3. Mathematical Expressions: [https://www.overleaf.com/learn/latex/Mathematical_expressions](https://www.overleaf.com/learn/latex/Mathematical_expressions)  
-   Uitleg over vergelijkingen
-
-4. Figures, Subfigures, and Tables: [https://www.overleaf.com/learn/latex/How_to_Write_a_Thesis_in_LaTeX_(Part_3)%3A_Figures%2C_Subfigures_and_Tables](https://www.overleaf.com/learn/latex/How_to_Write_a_Thesis_in_LaTeX_(Part_3)%3A_Figures%2C_Subfigures_and_Tables)  
-   Uitleg over tabellen en figuren
-
-5. UHasselt Physics Report Template: [https://github.com/Allyson-Robert/UHasselt_Physics_Report](https://github.com/Allyson-Robert/UHasselt_Physics_Report)  
-   Fysica verslagtemplate
-
-6. Filii LaTeX Workshop: [https://github.com/Allyson-Robert/filii-latex](https://github.com/Allyson-Robert/filii-latex)  
-   Workshopmateriaal
-
-7. Tables Generator: [https://www.tablesgenerator.com](https://www.tablesgenerator.com)  
-   Tabelgenerator
-
-8. Detexify (App)**: [https://detexify.kirelabs.org/classify.html](https://detexify.kirelabs.org/classify.html)  
-   Identificeer LaTeX-symbolen
+* Overleaf Online LaTeX-editor: [https://www.overleaf.com](https://www.overleaf.com)  
+* Algemene LaTeX-resource Learn Overleaf: [https://www.overleaf.com/learn](https://www.overleaf.com/learn)  
+* Uitleg over vergelijkingen: [https://www.overleaf.com/learn/latex/Mathematical_expressions](https://www.overleaf.com/learn/latex/Mathematical_expressions)  
+* Uitleg over tabellen en figuren: [https://www.overleaf.com/learn/latex/How_to_Write_a_Thesis_in_LaTeX_(Part_3)%3A_Figures%2C_Subfigures_and_Tables](https://www.overleaf.com/learn/latex/How_to_Write_a_Thesis_in_LaTeX_(Part_3)%3A_Figures%2C_Subfigures_and_Tables)     
+* UHasselt Physics Report Template: [https://github.com/Allyson-Robert/UHasselt_Physics_Report](https://github.com/Allyson-Robert/UHasselt_Physics_Report)  
+* Filii LaTeX Workshopmateriaal: [https://github.com/Allyson-Robert/filii-latex](https://github.com/Allyson-Robert/filii-latex)  
+* Tables Generator: [https://www.tablesgenerator.com](https://www.tablesgenerator.com)  
+* Detexify (App) voor het identificeren van LaTeX-symbolen: [https://detexify.kirelabs.org/classify.html](https://detexify.kirelabs.org/classify.html)  
+   
 
 Deze lijst biedt handige links met korte uitleg voor elk aspect van de LaTeX-workshop en andere relevante bronnen.
 
