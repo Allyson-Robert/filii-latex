@@ -1,1 +1,4 @@
+theme: jekyll-theme-minimal
+title: Filii Lamberti: LaTeX Workshop voor Beginners
+description: Deze workshop biedt een praktische introductie tot LaTeX, met aandacht voor documentopmaak, formules, figuren, tabellen, code snippets, referenties en het delen van projecten.
 markdown: kramdown
