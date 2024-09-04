@@ -1,11 +1,8 @@
-# LaTeX voor Beginners
-
 **Georganiseerd door:** Filii Lamberti  
 **Spreker:** Allyson Robert (PhD Studente)
 
 Het doel van deze workshop is om studenten kennis te laten maken met LaTeX.
 
-# Inhoud Workshop
 * TOC
 {:toc}
 
