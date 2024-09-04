@@ -1,7 +1,10 @@
-**Georganiseerd door:** Filii Lamberti  
-**Spreker:** Allyson Robert (PhD Studente)
+**Georganiseerd door:** Filii Lamberti ([Website](https://filii.be/)) 
 
-Het doel van deze workshop is om studenten kennis te laten maken met LaTeX.
+**Spreker:** Allyson Robert (PhD, [X-LAB UHasselt](https://x-lab.be/), [LinkedIn](https://www.linkedin.com/in/allysonrobert/))
+
+Op deze pagina vind je een groot deel van de informatie die aan bod komt in de LaTeX-workshop van Filii Lamberti.
+Gebruik deze pagina als uitvalsbasis of als referentie door het academiejaar.
+Aarzel niet om vragen te stellen of hulp te vragen aan medestudenten, Filii-leden of assistenten.
 
 * TOC
 {:toc}
