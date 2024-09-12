@@ -1,6 +1,6 @@
 **Georganiseerd door:** Filii Lamberti ([Website](https://filii.be/)) 
 
-**Spreker:** Allyson Robert (PhD, [X-LAB UHasselt](https://x-lab.be/), [LinkedIn](https://www.linkedin.com/in/allysonrobert/))
+**Spreker:** Allyson Robert (PhD Researcher, [X-LAB UHasselt](https://x-lab.be/), [LinkedIn](https://www.linkedin.com/in/allysonrobert/))
 
 Op deze pagina vind je een groot deel van de informatie die aan bod komt in de LaTeX-workshop van Filii Lamberti.
 Gebruik deze pagina als uitvalsbasis of als referentie door het academiejaar.
