@@ -224,7 +224,9 @@ Dit maakt het eenvoudig om consistente en duidelijke verwijzingen in je document
 
 ## Bibliografie
 
-In LaTeX wordt de bibliografie beheerd met de biblatex-package, waarmee je eenvoudig referenties kunt toevoegen en beheren. Je maakt hiervoor een apart .bib-bestand aan, zoals references.bib, waarin je bronnen vermeldt. Voeg dit bestand toe aan je LaTeX-document met \addbibresource{references.bib} in de preamble.
+In LaTeX wordt de bibliografie beheerd met de biblatex-package, waarmee je eenvoudig referenties kunt toevoegen en beheren. 
+Je maakt hiervoor een apart `.bib`-bestand aan, zoals `references.bib`, waarin je bronnen vermeldt. 
+Voeg dit bestand toe aan je LaTeX-document door `\addbibresource{references.bib}` in de preamble te plaatsen.
 
 ```latex
 % De volgende twee regels gaan in je preamble
@@ -238,12 +240,14 @@ In de tekst kan je verwijzer naar bronnen met \cite{key}.
 \printbibliography
 ```
 
-Om de bibliografie weer te geven, gebruik je \printbibliography. Dit zorgt ervoor dat alleen de geciteerde bronnen in de lijst verschijnen. Gebruik het \cite{key}-commando om een specifieke bron te citeren. De key is een unieke identifier die je aan elke bron in je .bib-bestand toekent, en die je gebruikt in het \cite{key}-commando om naar die specifieke bron te verwijzen in je LaTeX-document. Wil je echter alle bronnen uit het .bib-bestand weergeven, ook ongeciteerde, dan kun je \nocite{*} gebruiken, maar dit wordt doorgaans afgeraden.
-Hieronder een voorbeeld van een .bib-bestand met meerdere online bronnen:
+Om de bibliografie weer te geven, gebruik je `\printbibliography`.
+Dit zorgt ervoor dat de geciteerde bronnen in de lijst verschijnen. 
+Gebruik het `\cite{key}`-commando om een specifieke bron te citeren. 
+De key is een unieke identifier die je aan elke bron in je `.bib`-bestand toekent, en die je gebruikt in het `\cite{key}`-commando om naar die specifieke bron te verwijzen in je LaTeX-document. 
+Wil je echter alle bronnen uit het `.bib`-bestand weergeven, ook ongeciteerde, dan kun je `\nocite{*}` gebruiken, maar dit wordt doorgaans afgeraden.
+Hieronder een voorbeeld van een `.bib`-bestand met meerdere online bronnen:
 
-
-
-Voorbeeld references.bib:
+Voorbeeld `references.bib`:
 
 ```latex
 @online{Overleaf,
