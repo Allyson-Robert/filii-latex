@@ -245,7 +245,8 @@ Dit zorgt ervoor dat de geciteerde bronnen in de lijst verschijnen.
 Gebruik het `\cite{key}`-commando om een specifieke bron te citeren. 
 De key is een unieke identifier die je aan elke bron in je `.bib`-bestand toekent, en die je gebruikt in het `\cite{key}`-commando om naar die specifieke bron te verwijzen in je LaTeX-document. 
 Wil je echter alle bronnen uit het `.bib`-bestand weergeven, ook ongeciteerde, dan kun je `\nocite{*}` gebruiken, maar dit wordt doorgaans afgeraden.
-Hieronder een voorbeeld van een `.bib`-bestand met meerdere online bronnen:
+Hieronder een voorbeeld van een `.bib`-bestand met meerdere bronnen.
+Gebruik deze bronnen of kijk naar [deze link](https://bib-it.sourceforge.net/help/fieldsAndEntryTypes.php#:~:text=Required%20fields%3A%20author%2C%20title%2C%20booktitle%2C%20year.,%2C%20organization%2C%20publisher%2C%20note.&text=Technical%20documentation.) om te weten welke velden nodig zijn voor elke bron of elk type document
 
 Voorbeeld `references.bib`:
 
