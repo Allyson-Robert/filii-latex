@@ -246,7 +246,8 @@ Gebruik het `\cite{key}`-commando om een specifieke bron te citeren.
 De key is een unieke identifier die je aan elke bron in je `.bib`-bestand toekent, en die je gebruikt in het `\cite{key}`-commando om naar die specifieke bron te verwijzen in je LaTeX-document. 
 Wil je echter alle bronnen uit het `.bib`-bestand weergeven, ook ongeciteerde, dan kun je `\nocite{*}` gebruiken, maar dit wordt doorgaans afgeraden.
 Hieronder een voorbeeld van een `.bib`-bestand met meerdere bronnen.
-Gebruik deze bronnen of kijk naar [deze link](https://bib-it.sourceforge.net/help/fieldsAndEntryTypes.php#Entries) om te weten welke velden nodig zijn voor elke bron of elk type document
+Gebruik deze bronnen of kijk naar [deze link](https://bib-it.sourceforge.net/help/fieldsAndEntryTypes.php#Entries) om te weten welke velden nodig zijn voor elke bron of elk type document.
+BibLaTeX bied ook extra types aan voor de referenties, een lijst kan je vinden op de website van [Overleaf](https://www.overleaf.com/learn/latex/Bibliography_management_with_biblatex#Reference_guide).
 
 Voorbeeld `references.bib`:
 
