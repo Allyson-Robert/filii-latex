@@ -246,7 +246,7 @@ Gebruik het `\cite{key}`-commando om een specifieke bron te citeren.
 De key is een unieke identifier die je aan elke bron in je `.bib`-bestand toekent, en die je gebruikt in het `\cite{key}`-commando om naar die specifieke bron te verwijzen in je LaTeX-document. 
 Wil je echter alle bronnen uit het `.bib`-bestand weergeven, ook ongeciteerde, dan kun je `\nocite{*}` gebruiken, maar dit wordt doorgaans afgeraden.
 Hieronder een voorbeeld van een `.bib`-bestand met meerdere bronnen.
-Gebruik deze bronnen of kijk naar [deze link](https://bib-it.sourceforge.net/help/fieldsAndEntryTypes.php#:~:text=Required%20fields%3A%20author%2C%20title%2C%20booktitle%2C%20year.,%2C%20organization%2C%20publisher%2C%20note.&text=Technical%20documentation.) om te weten welke velden nodig zijn voor elke bron of elk type document
+Gebruik deze bronnen of kijk naar [deze link](https://bib-it.sourceforge.net/help/fieldsAndEntryTypes.php#Entries) om te weten welke velden nodig zijn voor elke bron of elk type document
 
 Voorbeeld `references.bib`:
 
@@ -325,7 +325,8 @@ Hier zijn nog enkele tips die je kan gebruiken in je LaTeX carriere.
 * UHasselt Physics Report Template: [https://github.com/Allyson-Robert/UHasselt_Physics_Report](https://github.com/Allyson-Robert/UHasselt_Physics_Report)  
 * Filii LaTeX Workshopmateriaal: [https://github.com/Allyson-Robert/filii-latex](https://github.com/Allyson-Robert/filii-latex)  
 * Tables Generator: [https://www.tablesgenerator.com](https://www.tablesgenerator.com)  
-* Detexify (App) voor het identificeren van LaTeX-symbolen: [https://detexify.kirelabs.org/classify.html](https://detexify.kirelabs.org/classify.html)  
+* Detexify (App) voor het identificeren van LaTeX-symbolen: [https://detexify.kirelabs.org/classify.html](https://detexify.kirelabs.org/classify.html)
+* Bijkomende informatie over bibtex entries: [Bib-it SourceForge](https://bib-it.sourceforge.net/help/fieldsAndEntryTypes.php#Entries)
    
 
 Deze lijst biedt handige links met korte uitleg voor elk aspect van de LaTeX-workshop en andere relevante bronnen.
