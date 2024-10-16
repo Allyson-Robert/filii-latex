@@ -7,12 +7,14 @@
 \usepackage{amsmath}
 \usepackage{verbatim}
 \usepackage{listings}
+\usepackage{parskip}
 \usepackage{csquotes}
 \usepackage{biblatex}
 \usepackage[colorlinks=true]{hyperref}
-\usepackage{cleveref}
+\usepackage[dutch]{cleveref}
 
-\setlength\parindent{0pt}
+% Hieronder een alternatief om de indentatie bij nieuwe paragrafen manueel uit te zetten
+% \setlength\parindent{0pt} 
 \addbibresource{references.bib}
 
 \title{LaTeX Workshop}
@@ -34,7 +36,7 @@ Het is altijd handig om elke zin op een nieuwe regel te plaatsen, zo zullen in d
 Voor zij die het niet meer weten, de wetten van Newton kunnen als volgt genoteerd worden:
 
 \begin{align}
-    \sum \vec{F} = 0 &\Rightarrow \vec{v} = \text{cte}\\
+    \sum_{i=0}^{N} \vec{F} = 0 &\Rightarrow \vec{v} = \text{cte}\\
     %
     \vec{a} &= \frac{\sum \vec{F}}{m} \\
     %
@@ -123,7 +125,6 @@ Zo verwijst \LaTeX ~automatisch naar het juiste nummer van de figuur: \ref{fig:p
 Beter is om de cleveref package en het commando \verb|\cref{tab:dependencies}| te gebruiken zodat LaTeX ook zelf refereert naar het type object.
 Zo weet latex zelf dat ik refereer naar \cref{fig:pikachu} en \cref{tab:dependencies} of zelfs \cref{sec:intro}.
 Dit zal afhangen van de taalinstellingen in je preamble, gebruik hiervoor de juiste instellingen van de \textit{babel} package.
-
 
 Het is ook mogelijk om LaTeX je bibliografie te laten beheren.
 Gebruik daarvoor de \textit{csquotes} en \textit{biblatex}.
